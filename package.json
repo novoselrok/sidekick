@@ -1,0 +1,15 @@
+{
+  "name": "sidekick",
+  "version": "1.0.0",
+  "description": "Crawler for extracting text from HTML.",
+  "type": "module",
+  "main": "crawler.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^11.1.0",
+    "glob": "^10.3.10",
+    "puppeteer": "^21.3.8"
+  }
+}
