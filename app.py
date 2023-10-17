@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path="/sidekick/static")
 
 db = Memory(
     memory_file=os.getenv("SIDEKICK_VECTOR_DB_PATH"),
-    embedding_model="intfloat/e5-small-v2",
+    embedding_model="intfloat/e5-base-v2",
 )
 
 

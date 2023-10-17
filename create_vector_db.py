@@ -20,8 +20,9 @@ def create_vector_db(documents_path: str, output_path: str):
             "window_size": 256,
             "overlap": 32,
         },
-        embedding_model="intfloat/e5-small-v2",
+        embedding_model="intfloat/e5-base-v2",
     )
+    memory.clear()
 
     for document in read_documents(documents_path):
         memory.save(

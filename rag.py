@@ -1,5 +1,5 @@
 import argparse
-from typing import List, Tuple, Dict
+from typing import List, Dict
 
 import llms
 from vectordb import Memory
@@ -51,7 +51,7 @@ def rag(db: Memory, query: str) -> str:
 
 
 def main(args):
-    memory = Memory(memory_file=args.db, embedding_model="intfloat/e5-small-v2")
+    memory = Memory(memory_file=args.db, embedding_model="intfloat/e5-base-v2")
     answer = rag(memory, args.query)
     print("Answer:", answer["answer"])
 
